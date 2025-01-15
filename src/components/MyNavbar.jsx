@@ -31,19 +31,19 @@ const MyNavbar = function () {
               </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link fw-bold' href='#'>
+              <Link className='nav-link fw-bold' to='/movies'>
                 Movies
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link fw-bold' href='#'>
+              <Link className='nav-link fw-bold' to='recently-added'>
                 Recently Added
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-link fw-bold' href='#'>
+              <Link className='nav-link fw-bold' to='my-list'>
                 My List
-              </a>
+              </Link>
             </li>
           </ul>
           <div className='d-flex align-items-center'>

@@ -10,6 +10,8 @@ import AccountContent from './components/AccountContent';
 import SettingsContent from './components/SettingsContent';
 import TvShows from './components/TvShows';
 import MovieDetails from './components/MovieDetails';
+import NotFound from './components/NotFound';
+import WorkInProgress from './components/WorkInProgress';
 
 function App() {
   return (
@@ -35,6 +37,16 @@ function App() {
           <Route path='/account' element={<AccountContent />} />
 
           <Route path='/settings' element={<SettingsContent />} />
+
+          <Route path='/tv-shows' element={<WorkInProgress />} />
+
+          <Route path='/movies' element={<WorkInProgress />} />
+
+          <Route path='/recently-added' element={<WorkInProgress />} />
+
+          <Route path='/my-list' element={<WorkInProgress />} />
+
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
