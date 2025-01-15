@@ -1,19 +1,36 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/assets/css/app.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import HomePage from './components/Homepage';
-// import AccountPage from './components/AccountPage';
-// import SettingsPage from './components/SettingsPage';
+import MyNavbar from './components/MyNavbar';
+import Main from './components/Main';
+import MyFooter from './components/MyFooter';
+import AccountContent from './components/AccountContent';
+import SettingsContent from './components/SettingsContent';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
-        <HomePage />
-        {/* <AccountPage /> */}
-        {/* <SettingsPage /> */}
+        <MyNavbar />
+
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <>
+                <Main />
+                <MyFooter />
+              </>
+            }
+          />
+
+          <Route path='/account' element={<AccountContent />} />
+
+          <Route path='/settings' element={<SettingsContent />} />
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
