@@ -73,7 +73,12 @@ const MyNavbar = function () {
                   </Link>
                 </li>
                 <li>
-                  <a className='dropdown-item' href='#'>
+                  <a
+                    className='dropdown-item'
+                    href='#'
+                    // lo stile inserito disabilita il link - dovrà poi essere gestito
+                    style={{ pointerEvents: 'none' }}
+                  >
                     Log out
                   </a>
                 </li>
