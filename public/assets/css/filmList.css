@@ -1,0 +1,15 @@
+.singleFilm {
+  height: 300px;
+}
+
+.filmPoster {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 190px;
+  cursor: pointer;
+}
+
+.filmPoster:hover {
+  transform: scale(1.2, 1.2);
+}
