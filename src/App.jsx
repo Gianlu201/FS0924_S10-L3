@@ -9,6 +9,7 @@ import MyFooter from './components/MyFooter';
 import AccountContent from './components/AccountContent';
 import SettingsContent from './components/SettingsContent';
 import TvShows from './components/TvShows';
+import MovieDetails from './components/MovieDetails';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           />
 
           <Route path='/tv-shows' element={<TvShows />} />
+
+          <Route path='/movie-details/:movieId' element={<MovieDetails />} />
 
           <Route path='/account' element={<AccountContent />} />
 
