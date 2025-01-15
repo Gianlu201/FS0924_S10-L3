@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import '../public/assets/css/app.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -7,6 +8,7 @@ import Main from './components/Main';
 import MyFooter from './components/MyFooter';
 import AccountContent from './components/AccountContent';
 import SettingsContent from './components/SettingsContent';
+import TvShows from './components/TvShows';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               </>
             }
           />
+
+          <Route path='/tv-shows' element={<TvShows />} />
 
           <Route path='/account' element={<AccountContent />} />
 
